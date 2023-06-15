@@ -1,23 +1,33 @@
-import { NavLink } from "react-router-dom";
 import "../styles/navbar.scss";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logomain.png";
 
 export default function Nav() {
+  function toggleNavbar() {
+    const navbar = document.querySelector(".navbar-content");
+    navbar.classList.toggle("navbar-open");
+  }
+
   return (
     <header className="navbar" id="navbar">
-      <button className="navbar-burger-btn">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button className="navbar-burger-btn" onClick={toggleNavbar}>
+        <div></div>
+        <div></div>
+        <div></div>
       </button>
-      <nav>
-        <div className="navbar-title">
+      <nav className="navbar-content">
+        <div className="navbar-logo-container">
           <NavLink to="/" end>
-            <img src="#" className="navbar-logo" alt="Navbar Logo" />
+            <img src={logo} className="navbar-logo" alt="Navbar Logo" />
           </NavLink>
         </div>
         <div className="navbar-links">
-          <NavLink to="/about">My journey</NavLink>
-          <NavLink to="/contact">Let&#39;s talk!</NavLink>
+          <NavLink to="/about" className="navbar-link">
+            My journey
+          </NavLink>
+          <NavLink to="/contact" className="navbar-link">
+            Let&#39;s talk!
+          </NavLink>
         </div>
       </nav>
     </header>
