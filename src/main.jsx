@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import BrowserRouter from "./components/BrowserRouter.jsx";
+import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import "./styles/variables.scss";
 import "./styles/reset.scss";
