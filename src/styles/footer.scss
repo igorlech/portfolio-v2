@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--secondary-color);
+  height: 12em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5em;
+      height: 8em;
+    }
+  }
+}
+
+.footerlogo {
+  width: 5em;
+  margin-bottom: 2em;
+
+  @media screen and (max-width: 768px) {
+    .footerlogo {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footername {
+  font-family: ff-nexus-typewriter, sans-serif;
+  color: #ffffff;
+  font-size: 1.5em;
+}
