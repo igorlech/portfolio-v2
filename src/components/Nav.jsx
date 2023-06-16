@@ -5,15 +5,18 @@ import logo from "../assets/logomain.png";
 export default function Nav() {
   function toggleNavbar() {
     const navbar = document.querySelector(".navbar-content");
+    const burgerBtn = document.querySelector(".navbar-burger-btn");
+
     navbar.classList.toggle("navbar-open");
+    burgerBtn.classList.toggle("burger-clicked");
   }
 
   return (
     <header className="navbar" id="navbar">
       <button className="navbar-burger-btn" onClick={toggleNavbar}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="burger-line-1"></div>
+        <div id="burger-line-2"></div>
+        <div id="burger-line-3"></div>
       </button>
       <nav className="navbar-content">
         <div className="navbar-logo-container">
@@ -23,7 +26,7 @@ export default function Nav() {
         </div>
         <div className="navbar-links">
           <NavLink to="/about" className="navbar-link">
-            My journey
+            About me
           </NavLink>
           <NavLink to="/contact" className="navbar-link">
             Let&#39;s talk!
