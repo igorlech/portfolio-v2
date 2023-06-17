@@ -12,7 +12,7 @@
   .navbar-burger-btn {
     display: block;
     z-index: 2;
-    margin-right: 1rem;
+    margin-right: var(--default-spacing);
 
     &:hover {
       cursor: pointer;
@@ -29,7 +29,7 @@
   margin-left: 3rem;
 
   @media screen and (max-width: 768px) {
-    margin-left: 1rem;
+    margin-left: var(--default-spacing);
   }
 }
 
@@ -50,7 +50,7 @@
 }
 
 .navbar-link {
-  margin-left: 1rem;
+  margin-left: var(--default-spacing);
   border: 3px solid var(--secondary-color);
   color: var(--secondary-color);
   padding: 0.5rem;
@@ -86,7 +86,23 @@
     z-index: 1;
 
     a {
-      margin: 1rem 0;
+      margin: var(--default-spacing) 0;
+    }
+
+    .navbar-link {
+      margin: var(--default-spacing) 0;
+      border: none;
+      color: var(--white-color);
+      background-color: var(--secondary-color);
+      border: 3px solid var(--secondary-color);
+      font-size: 2rem;
+      font-weight: 500;
+      padding: var(--default-spacing);
+
+      &:hover {
+        background-color: var(--white-color);
+        color: var(--additional-color);
+      }
     }
   }
 
