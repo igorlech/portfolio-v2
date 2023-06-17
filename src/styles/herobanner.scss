@@ -1,0 +1,89 @@
+.landing-heading,
+.skills-heading,
+.projects-heading,
+.testimonials-heading,
+.about-heading,
+.contact-heading {
+  font-family: var(--secondary-font);
+  word-spacing: -10px;
+  font-size: 4em;
+}
+
+.hl-desktop {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.igorphoto {
+  width: 18em;
+
+  @media screen and (min-width: 768px) {
+    width: 32%;
+    position: absolute;
+    left: 13%;
+    top: 5%;
+  }
+}
+
+.hl-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 6.25rem);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.landing-heading,
+.landing-button,
+.landing-subheading,
+.igorphoto {
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.landing-heading {
+  text-transform: capitalize;
+  @media screen and (min-width: 768px) {
+    font-size: 9.5vw;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+  }
+}
+
+.mobile-landing-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.landing-subheading {
+  margin-top: 1em;
+  font-size: 1.7em;
+  font-family: var(--secondary-font);
+  text-transform: lowercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 3.8vw;
+    position: absolute;
+    right: 12%;
+    top: 33%;
+  }
+}
+
+.desktop-landing {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    min-height: calc(100vh - 120px);
+    width: 100%;
+  }
+}
