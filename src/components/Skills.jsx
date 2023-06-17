@@ -1,7 +1,15 @@
+import "../styles/skills.scss";
+
+import { Fade } from "react-awesome-reveal";
+
 export default function Skills() {
   return (
     <section className="skills-section">
-      <h3>Skills Section</h3>
+      <Fade triggerOnce="true" direction="up">
+        <h2 className="skills-heading heading" id="skills-heading">
+          my main skills
+        </h2>
+      </Fade>
     </section>
   );
 }

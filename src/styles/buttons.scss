@@ -39,7 +39,6 @@
   margin-top: 2em;
   color: var(--white-color);
   background-color: var(--primary-color);
-  // box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.4);
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -53,7 +52,6 @@
     &:hover {
       background-color: var(--white-color);
       color: var(--primary-color);
-      // box-shadow: 2px 1px 8px rgb(0, 0, 0, 0.2);
     }
   }
 }
