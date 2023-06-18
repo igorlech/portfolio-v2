@@ -7,24 +7,20 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
-    .footer {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 5em;
-      min-height: 8em;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5em;
+    min-height: 8em;
   }
 }
 
 .footerlogo {
-  width: 5em;
+  width: 3em;
   margin-bottom: 2em;
 
-  @media screen and (max-width: 768px) {
-    .footerlogo {
-      margin-bottom: 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 

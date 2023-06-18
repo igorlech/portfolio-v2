@@ -1,4 +1,5 @@
 import "../styles/skills.scss";
+import Technologies from "./Technologies";
 import codeIcon from "../assets/code-icon.png";
 
 import { Fade } from "react-awesome-reveal";
@@ -10,10 +11,11 @@ export default function Skills() {
         <h2 className="skills-heading heading" id="skills-heading">
           my skills
         </h2>
-        <div className="skills-icon-cont">
-          <img className="skills-icon" src={codeIcon}></img>
-        </div>
       </Fade>
+      <div className="skills-icon-cont">
+        <img className="skills-icon" src={codeIcon}></img>
+      </div>
+      <Technologies />
     </section>
   );
 }
