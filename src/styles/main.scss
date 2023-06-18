@@ -1,3 +1,27 @@
 body {
   font-family: var(--primary-font);
 }
+
+// Typography
+
+.heading {
+  font-size: 4em;
+  text-align: center;
+  margin: 0.5em 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 7em;
+    text-align: left;
+    margin: 1em 0;
+    margin-left: 5rem;
+  }
+}
+
+.heading-right {
+  @media screen and (min-width: 768px) {
+    font-size: 7em;
+    text-align: right;
+    margin-left: 0;
+    margin-right: 5rem;
+  }
+}
