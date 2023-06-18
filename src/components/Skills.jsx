@@ -1,5 +1,6 @@
 import "../styles/skills.scss";
 import Technologies from "./Technologies";
+import Creatives from "./Creatives";
 import codeIcon from "../assets/code-icon.png";
 
 import { Fade } from "react-awesome-reveal";
@@ -16,6 +17,7 @@ export default function Skills() {
         <img className="skills-icon" src={codeIcon}></img>
       </div>
       <Technologies />
+      <Creatives />
     </section>
   );
 }
