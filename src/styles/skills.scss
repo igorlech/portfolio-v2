@@ -9,16 +9,13 @@
 }
 
 .skills-technologies {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   grid-gap: 1em;
+  margin: 0 var(--default-spacing);
 
   @media screen and (min-width: 768px) {
-    margin-top: 2em;
+    margin-top: calc(var(--default-spacing) * 2);
     margin: 0 5rem;
   }
 }
@@ -27,7 +24,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2em;
+
+  font-size: 1.3rem;
+
+  margin-bottom: calc(var(--default-spacing) * 2);
+  background-color: var(--additional-color);
+  padding: var(--default-spacing);
+  border-radius: var(--border-radius);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
