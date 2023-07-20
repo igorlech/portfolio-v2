@@ -9,6 +9,12 @@ export default function Nav() {
 
     navbar.classList.toggle("navbar-open");
     burgerBtn.classList.toggle("burger-clicked");
+
+    if (navbar.classList.contains("navbar-open")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   }
 
   return (

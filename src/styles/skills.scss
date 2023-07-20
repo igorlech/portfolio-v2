@@ -9,14 +9,15 @@
 }
 
 .skills-technologies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-gap: 1em;
 
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    grid-gap: 1em;
     margin-top: 2em;
     margin: 0 5rem;
   }
