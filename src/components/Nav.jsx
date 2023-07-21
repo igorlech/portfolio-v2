@@ -6,14 +6,17 @@ export default function Nav() {
   function toggleNavbar() {
     const navbar = document.querySelector(".navbar-content");
     const burgerBtn = document.querySelector(".navbar-burger-btn");
+    const logo = document.querySelector(".navbar-logo");
 
     navbar.classList.toggle("navbar-open");
     burgerBtn.classList.toggle("burger-clicked");
 
     if (navbar.classList.contains("navbar-open")) {
       document.body.style.overflow = "hidden";
+      logo.style.display = "none";
     } else {
       document.body.style.overflow = "auto";
+      logo.style.display = "block";
     }
   }
 
