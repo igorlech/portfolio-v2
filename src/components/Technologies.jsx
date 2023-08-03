@@ -9,7 +9,7 @@ export default function Technologies() {
       <div className="single-technology">Webpack</div>
       <div className="single-technology">Node.js</div>
       <div className="single-technology">RxJS</div>
-      <div className="single-technology">C# + Razor</div>
+      <div className="single-technology">.NET (C# + Razor)</div>
       <div className="single-technology">Umbraco CMS</div>
       <div className="single-technology">Wordpress CMS</div>
     </div>
